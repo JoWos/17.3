@@ -10,7 +10,7 @@ process.stdin.on('readable', function() {
                 console.log(process.env);
                 break;
             case '/exit':
-                process.stdout.write('Quiting app!\n');
+                process.stdout.write('Quitting app!\n');
                 process.exit();
                 break;
             default:
