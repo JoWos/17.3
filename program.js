@@ -6,8 +6,9 @@ process.stdin.on('readable', function() {
     if (input !== null) {
         var instruction = input.toString().trim();
         switch (instruction) {
-            case 'process.env':
-                console.log(process.env);
+            case 'env':
+                console.log('LANG: ' + process.env.lang);
+                console.log('NODE version: ' + process.versions.node);
                 break;
             case '/exit':
                 process.stdout.write('Quitting app!\n');
