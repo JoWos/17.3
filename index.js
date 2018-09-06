@@ -1,5 +1,4 @@
 var os = require('os'); 
-var colors = require('colors');
 var OSinfo = require('./modules/OSinfo');
 
 process.stdin.setEncoding('utf-8');
